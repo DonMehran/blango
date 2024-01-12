@@ -3,6 +3,8 @@ from blog.models import Post# Create your views here.
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 from blog.forms import CommentForm
+from django.views.decorators.cache import cache_page
+
 import logging
 logger = logging.getLogger(__name__)
 
